@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        body.dark-mode header {
+            background-color: #1e1e1e;
+        }
+        body.dark-mode .btn {
+            background-color: #333333;
+            color: #ffffff;
+        }
+        body.dark-mode .project-card, 
+        body.dark-mode .skill-card {
+            background-color: #2c2c2c;
+        }
+        body.dark-mode footer {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        body.dark-mode a {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Abinaya Rajasekara</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Dark Mode Toggle Button -->
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" data-aos="fade-up">
+        <div class="profile-photo">
+            <img src="profile-photo.jpg" alt="My Profile Photo">
+        </div>
+        <h2>Hello, I'm <span>Abinaya</span></h2>
+        <p>Web Developer | Mobile App Developer | Designer | SQA </p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm a 3rd-year IT Undergraduate at SLIIT with a passion for technology. I’m learning mobile app development, web development, and artificial intelligence. I aim to enhance my skills in these fields and am also interested in software quality assurance, constantly seeking to grow and learn in the tech industry.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Programming</h3>
+                    <p> Beginning level </p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Web Development</h3>
+                    <p> HTML, CSS, JavaScript, PHP, Front-end Development.</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Database Management</h3>
+                    <p>SQL (beginner level)</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Software Quality Assurance</h3>
+                    <p>Basic knowledge of testing methodologies</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Basic understanding</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Soft Skills</h3>
+                    <p>Communication Skills
+                        Problem Solving
+                        Team Collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" data-aos="fade-up">
+        <div class="section-content">
+            <h2>My Projects</h2>
+            
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Online Apartment Sales System (Team Project)</h3>
+                <p>A web-based application built using HTML, CSS, JavaScript, PHP, and MySQL. It includes an admin panel, client-side features, and validation for apartment sales management.</p>
+            </div>
+            
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Vehicle Spare Part Management System (Team Project)</h3>
+                <p>Developed a web-based system for managing vehicle spare parts using HTML, CSS, JavaScript, Java, JSP, and MySQL. Includes an admin panel and client-side interaction.</p>
+            </div>
+            
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <h3>Hotel Management System (Team Project)</h3>
+                <p>Worked on a hotel management system as part of a team using the MERN stack. Contributed to both front-end and back-end development for handling bookings, guest data, and services.</p>
+            </div>
+            
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <h3>Mobile Application Development (Individual Projects)</h3>
+                <p>Designed and developed various mobile applications, including a movie ticket booking app UI design and a to-do app with data persistence using SharedPreferences in Android Studio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <a href="mailto:abiraj232001@gmail.com" class="btn">Send Email</a>
+            <a href="https://www.linkedin.com/in/abinaya-rajasekara-4905372a8" class="btn" target="_blank">LinkedIn</a>
+            <a href="https://github.com/abinaya-232001" class="btn" target="_blank">GitHub</a>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Abinaya.R. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Dark Mode Toggle Function
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
